@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: human-resources-iat1
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-human-resources-iat1
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5c849566720a6df57f3ea9fba65415b0e454337a25d2f7cee497b6c5ecf96253
         name: my-java-springboot
         ports:
         - containerPort: 8081

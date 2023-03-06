@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: human-resources-iat1
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: human-resources-iat1
+    app.kubernetes.io/part-of: ecp-human-resources
+  name: human-resources-iat1
+  namespace: burrzinga-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: human-resources-iat1
+    weight: null
+status: {}
